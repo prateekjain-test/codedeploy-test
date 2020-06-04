@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/codedeploy
+    overwrite: true
 hooks:
   ApplicationStop:
     - location: codedeploy/stop_service.sh
