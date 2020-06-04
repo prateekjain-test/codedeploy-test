@@ -15,6 +15,7 @@ if [ -f $PID_FILE ]; then
 fi
 
 # un asp.core application
+PARENT_DIR="$(dirname "$DIR")"
 #cd $SERVICE_ROOT
 #java -jar $DEPLOYMENT_HOME/target/$SERVICE_NAME-*-SNAPSHOT.jar &> "/tmp/$SERVICE_NAME-service.log" &
 java -jar $PARENT_DIR/target/$SERVICE_NAME-*-SNAPSHOT.jar &> "/tmp/$SERVICE_NAME-service.log" &
