@@ -10,6 +10,6 @@ source "$DIR/common.sh"
 PARENT_DIR="$(dirname "$DIR")"
 
 mkdir -p "$SERVICE_ROOT"
-cp "$PARENT_DIR/target/$SERVICE_NAME-*-SNAPSHOT.jar" "$SERVICE_ROOT/$SERVICE_NAME-*-SNAPSHOT.jar"
+#cp "$PARENT_DIR/target/$SERVICE_NAME-*-SNAPSHOT.jar" "$SERVICE_ROOT/$SERVICE_NAME-*-SNAPSHOT.jar"
 
-echo "Successfully copied $SERVICE_NAME jar to $SERVICE_ROOT"
+#echo "Successfully copied $SERVICE_NAME jar to $SERVICE_ROOT"
