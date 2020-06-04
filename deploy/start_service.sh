@@ -15,8 +15,9 @@ if [ -f $PID_FILE ]; then
 fi
 
 # un asp.core application
-cd $SERVICE_ROOT
-java -jar $DEPLOYMENT_HOME/target/$SERVICE_NAME-*-SNAPSHOT.jar &> "/tmp/$SERVICE_NAME-service.log" &
+#cd $SERVICE_ROOT
+#java -jar $DEPLOYMENT_HOME/target/$SERVICE_NAME-*-SNAPSHOT.jar &> "/tmp/$SERVICE_NAME-service.log" &
+java -jar $PARENT_DIR/target/$SERVICE_NAME-*-SNAPSHOT.jar &> "/tmp/$SERVICE_NAME-service.log" &
 echo $! > $PID_FILE
 
 echo "$SERVICE_NAME started successfully..."
