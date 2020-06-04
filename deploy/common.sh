@@ -6,7 +6,7 @@
 . ./properties.sh
 
 # deployment home
-DEPLOYMENT_HOME=/home/ubuntu
+DEPLOYMENT_HOME=/home/ubuntu/codedeploy
 
 # define the service root path
 SERVICE_ROOT=$DEPLOYMENT_HOME/$SERVICE_NAME
