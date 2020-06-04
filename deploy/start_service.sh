@@ -16,7 +16,7 @@ fi
 
 # un asp.core application
 cd $SERVICE_ROOT
-java -jar $SERVICE_NAME-*-SNAPSHOT.jar &> $SERVICE_ROOT/logs/service.log &
+java -jar $SERVICE_NAME-*-SNAPSHOT.jar &> "/tmp/$SERVICE_NAME-service.log" &
 echo $! > $SERVICE_ROOT/service.pid
 
 echo "$SERVICE_NAME started successfully..."
