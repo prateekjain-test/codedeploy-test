@@ -7,4 +7,4 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 source "$DIR/common.sh"
 
 # Remove service root directory
-rm -rf $DEPLOYMENT_HOME/*
+#rm -rf $DEPLOYMENT_HOME/*
