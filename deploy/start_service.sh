@@ -9,7 +9,7 @@ source "$DIR/common.sh"
 PID_FILE=$SERVICE_ROOT/service.pid
 
 # shut down sevice if it is running already
-if [! -f $PID_FILE]; then
+if [ -f $PID_FILE ]; then
     cat $PID_FILE | xargs kill -9
     rm $PID_FILE
 fi
