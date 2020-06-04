@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Import the independent service script which will
+# independent service configuration using which we can
+# run the codedeploy script with dynamic paramters
+. ./service.sh
+
+# deployment home
+DEPLOYMENT_HOME=/home/ubuntu
+
+# define the service root path
+SERVICE_ROOT=$DEPLOYMENT_HOME/$SERVICE_NAME
