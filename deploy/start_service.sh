@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Import the common script which will have the generic paramters for configuration
-. $(dirname "$0")/common.sh
+source "$DIR/common.sh"
 
 PID_FILE=$SERVICE_ROOT/service.pid
 
