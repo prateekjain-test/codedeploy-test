@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/codedeploy
+hooks:
+  ApplicationStop:
+    - location: codedeploy/stop_service.sh
+      timeout: 300
+      runas: root
+  BeforeInstall:
+    - location: codedeploy/remove_service_root.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: codedeploy/download_bundle.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: deploy/start_service.sh
+      timeout: 300
+      runas: root
