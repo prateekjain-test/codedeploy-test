@@ -3,7 +3,7 @@
 # Import the independent service script which will
 # independent service configuration using which we can
 # run the codedeploy script with dynamic paramters
-. ./service.sh
+. ./properties.sh
 
 # deployment home
 DEPLOYMENT_HOME=/home/ubuntu
