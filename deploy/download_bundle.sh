@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Import the common script which will have the generic paramters for configuration
-. $(dirname "$0")/common.sh
+source "$DIR/common.sh"
 
 # Define the parent directory where the file will be downloaded from s3 bucket
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
