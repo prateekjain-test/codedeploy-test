@@ -7,7 +7,7 @@ ROOT_DIR="$(dirname "$DIR")"
 # Import the independent service script which will
 # independent service configuration using which we can
 # run the codedeploy script with dynamic paramters
-. $(dirname "$0")/properties.sh
+source "$DIR/properties.sh"
 
 # deployment home
 DEPLOYMENT_HOME=/home/ubuntu/codedeploy
